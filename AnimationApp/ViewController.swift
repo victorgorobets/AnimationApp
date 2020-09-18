@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailInfoLabel: SpringLabel!
     @IBOutlet weak var nameAnimationLabel: UILabel!
     
-    private let show = AnimationTypes.createTypes()
+    private let animationArray = AnimationTypes.createTypes()
     private var counter = 0
     
     override func viewDidLoad() {
@@ -25,12 +25,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func showButtonAction() {
-        let animateShow = show[counter]
+        let animateShow = animationArray[counter]
         showView.animation = animateShow.name
         nameAnimationLabel.text = "DEMO \(animateShow.name)"
         showView.animate()
         detailInfoLabel.text = animateShow.getFullInfo
-        counter = counter < show.count-1 ? counter+1 : 0
+        counter = counter < animationArray.count - 1 ? counter + 1 : 0
         showButtonLabel.setTitle("Next: \(animateShow.name)", for: .normal)
     }
 }

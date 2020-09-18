@@ -26,70 +26,12 @@ struct AnimationTypes {
     }
 }
 
-let presetOptions = ["slideLeft",
-                     "slideDown",
-                     "slideUp",
-                     "squeezeLeft",
-                     "squeezeRight",
-                     "squeezeDown",
-                     "squeezeUp",
-                     "fadeIn",
-                     "fadeOut",
-                     "fadeOutIn",
-                     "fadeInLeft",
-                     "fadeInRight",
-                     "fadeInDown",
-                     "fadeInUp",
-                     "zoomIn",
-                     "zoomOut",
-                     "fall",
-                     "shake",
-                     "pop",
-                     "flipX",
-                     "flipY",
-                     "morph",
-                     "squeeze",
-                     "flash",
-                     "wobble",
-                     "swing"
-]
-let curveOptions = ["easeIn",
-                    "easeOut",
-                    "easeInOut",
-                    "linear",
-                    "spring",
-                    "easeInSine",
-                    "easeOutSine",
-                    "easeInOutSine",
-                    "easeInQuad",
-                    "easeOutQuad",
-                    "easeInOutQuad",
-                    "easeInCubic",
-                    "easeOutCubic",
-                    "easeInOutCubic",
-                    "easeInQuart",
-                    "easeOutQuart",
-                    "easeInOutQuart",
-                    "easeInQuint",
-                    "easeOutQuint",
-                    "easeInOutQuint",
-                    "easeInExpo",
-                    "easeOutExpo",
-                    "easeInOutExpo",
-                    "easeInCirc",
-                    "easeOutCirc",
-                    "easeInOutCirc",
-                    "easeInBack",
-                    "easeOutBack",
-                    "easeInOutBack"
-]
-
 extension AnimationTypes {
     
     static func createTypes() -> [AnimationTypes] {
         var createdTypes: [AnimationTypes] = []
-        let presets = presetOptions.shuffled()
-        let curves = curveOptions
+        let presets = DataManager.shared.presetOptions.shuffled()
+        let curves = DataManager.shared.curveOptions
         for index in 0..<presets.count {
             let new = AnimationTypes(
                 name: presets[index],

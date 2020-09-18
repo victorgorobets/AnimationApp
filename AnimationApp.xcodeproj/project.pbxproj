@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048088572514F54D00C31956 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048088562514F54D00C31956 /* DataManager.swift */; };
 		04A15FEE251408BE003F893B /* AnimationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A15FED251408BE003F893B /* AnimationTypes.swift */; };
 		04A8B3BD251346CA00B678BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8B3BC251346CA00B678BD /* AppDelegate.swift */; };
 		04A8B3BF251346CA00B678BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8B3BE251346CA00B678BD /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048088562514F54D00C31956 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		04A15FED251408BE003F893B /* AnimationTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTypes.swift; sourceTree = "<group>"; };
 		04A8B3B9251346CA00B678BD /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A8B3BC251346CA00B678BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				04A8B3BE251346CA00B678BD /* SceneDelegate.swift */,
 				04A8B3C0251346CA00B678BD /* ViewController.swift */,
 				04A15FED251408BE003F893B /* AnimationTypes.swift */,
+				048088562514F54D00C31956 /* DataManager.swift */,
 				04A8B3C2251346CA00B678BD /* Main.storyboard */,
 				04A8B3C5251346CE00B678BD /* Assets.xcassets */,
 				04A8B3C7251346CE00B678BD /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A15FEE251408BE003F893B /* AnimationTypes.swift in Sources */,
+				048088572514F54D00C31956 /* DataManager.swift in Sources */,
 				04A8B3C1251346CA00B678BD /* ViewController.swift in Sources */,
 				04A8B3BD251346CA00B678BD /* AppDelegate.swift in Sources */,
 				04A8B3BF251346CA00B678BD /* SceneDelegate.swift in Sources */,
